@@ -1,0 +1,44 @@
+html,body{
+    height: 100%
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#site-header{
+	background-color: rgb(53,53,53);
+	padding:5px;
+	border-bottom: rgb(80,80,80) solid 4px;
+	color:#FFFFFF;
+}
+
+#site-header a{
+	color: #FFFFFF;
+	font-size:140%;
+}
+#site-header a:hover{
+	text-decoration: none
+}
+
+#holder{
+    min-height: 100%;
+    position:relative;
+}
+
+#content{
+    padding-bottom: 100px;    /* height of footer */
+}
+
+footer{
+	height:120px;
+	padding-top:10px;
+	background-color: rgb(160,160,160);
+	color:#FFFFFF;
+	bottom:0px;
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
