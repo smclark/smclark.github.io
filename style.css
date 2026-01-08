@@ -1,11 +1,11 @@
 :root {
-  --bg-color: #0d0e12;
-  --text-primary: #ededed;
-  --text-secondary: #a1a1aa;
-  --accent-primary: #6366f1;
-  --accent-secondary: #a855f7;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
+  --bg-color: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --accent-primary: #4f46e5;
+  --accent-secondary: #9333ea;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -34,11 +34,31 @@ header {
   text-align: left;
 }
 
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  flex: 1;
+}
+
 h1 {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #4f46e5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -221,7 +241,7 @@ footer {
   left: -10%;
   width: 50%;
   height: 50%;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
   z-index: -1;
   pointer-events: none;
 }
@@ -232,7 +252,7 @@ footer {
   right: -10%;
   width: 50%;
   height: 50%;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
   z-index: -1;
   pointer-events: none;
 }
@@ -265,6 +285,24 @@ section:nth-child(3) {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .interests-container {
+    justify-content: center;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
