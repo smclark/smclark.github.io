@@ -1,91 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<title>Stuart Clark</title>
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="content/style.css" rel="stylesheet" type="text/css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stuart Clark - Senior Software Engineer</title>
+	<meta name="description" content="Senior Software Engineer specializing in Go, .NET, and Developer Tooling.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<header id="site-header">
-		<div class="container">		
-			<div class="col-md-12">	
-				<p><a href="http://www.twitter.com/stuartmclark">@stuartmclark</a></p>
+	<div class="glow-bg"></div>
+	<div class="glow-bg-2"></div>
+
+	<div class="container">
+		<header>
+			<h1>Stuart Clark</h1>
+			<span class="subtitle">Senior Software Engineer</span>
+			<p style="color: var(--text-secondary); max-width: 600px;">
+				Enhancing developer productivity through powerful tooling. Specialized in Go, .NET, and building robust
+				platform capabilities. Based in Dundee, Scotland.
+			</p>
+			<div class="interests-container">
+				<span class="interest-label">Outside of work:</span>
+				<span class="interest-item">Guitar</span>
+				<span class="interest-item">5-a-side Football</span>
+				<span class="interest-item">3D Printing</span>
+				<span class="interest-item">Gaming with the kids</span>
 			</div>
-		</div>
-	</header>
-	<div id="wrapper">
-		<div class="jumbotron" >
-			<div class="container">
-				<div class="col-md-12">
-					<h1>Stuart Clark</h1>
-					<p>From the sunny city of Dundee, Scotland. Currently .NET Developer, enjoy working with web / desktop and mobile app development</p>
+			<div class="social-links">
+				<a href="https://github.com/smclark" target="_blank">GitHub</a>
+				<a href="https://www.linkedin.com/in/stuartmclark" target="_blank">LinkedIn</a>
+				<a href="mailto:stuartMclark1@gmail.com">Contact</a>
+			</div>
+		</header>
+
+		<section id="experience">
+			<h2>Experience</h2>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Senior Software Engineer</span>
+					<span class="company">Gravitee</span>
+					<span class="duration">Jul 2025 - Present</span>
+				</div>
+				<div class="job-details">
+					<p>Building next-generation API management and developer tooling solutions.</p>
 				</div>
 			</div>
-		</div>
-		<div id="content">
-			<div class="container">
-				<div class="col-md-12">
-					<h2>About Me</h2>
-					<div class="col-md-2">
-					<img src="img/face.jpg" width="100%" />
-					</div>
-					<div class="col-md-2">
-					<ul id="profile-list">					
-						<li>Stuart Clark</li>
-						<li>Dundee, Scotland</li>
-						<li>Full Stack .NET Developer</li>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Senior Software Engineer</span>
+					<span class="company">Ambassador Labs</span>
+					<span class="duration">Oct 2024 - Jul 2025</span>
+				</div>
+				<div class="job-details">
+					<p>Led and contributed to full-stack development initiatives focused on enhancing developer
+						productivity through powerful tooling.</p>
+					<ul>
+						<li>Developed new capabilities in the CLI and backend systems using Go, including robust
+							integration with OpenAPI specs and managing API lifecycles.</li>
+						<li>Automated the processing of complex, nested specifications using the Blackbird CLI.</li>
+						<li>Delivered new user-facing features and improvements in Next.js to support a seamless
+							experience.</li>
+						<li>Developed a VS Code extension to expand the developer footprint of the Blackbird system.
+						</li>
+						<li>Researched and integrated AI-powered development tools, working with MCP clients and servers
+							for editors like VS Code and Cursor.</li>
+						<li>Built and supported internal developer tools, including IDE extensions, CLI workflows, and
+							systematized logging/reporting mechanisms.</li>
 					</ul>
+					<div class="technologies">
+						<span class="tech-tag">Go</span>
+						<span class="tech-tag">Next.js</span>
+						<span class="tech-tag">Postgres</span>
+						<span class="tech-tag">CLI</span>
+						<span class="tech-tag">OpenAPI</span>
+						<span class="tech-tag">VS Code Extensions</span>
+						<span class="tech-tag">MCP</span>
 					</div>
-					<div class="col-md-8">
-						<p>This is my Github hosted blog where I will be detailing my current projects and will hopefully have some time to throw up a few tutorials every now and then. Below are my current projects that are still in progress, as these are released I will move them on to another page with the release notes.</p>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<h2>Projects</h2>					
-					<div class="col-md-4">
-						<h3><a href="https://github.com/smclark/swatter">Swatter</a></h3>
-						<p class="subtitle super">(Work In Progress)</p>
-						<p>Open Source Bug Tracker. This project be developing tow main sections. The first piece of development will be focused on creating a REST API using ASP WebAPI v2. The second phase of development will be a bug tracking website which utilises the API and will be able to give users a simple effective way to manage their bugs and tasks.</p>
-
-						<p>Eventually users will be able to host their own instances of the REST API and site.</p>
-
-						<p class="subtitle">C# / ASP.NET / MVC / WebAPI</p>
-					</div>		
-					<div class="col-md-4">
-							<h3><a href="https://github.com/smclark/snippit">Snippit</a></h3>
-						<p class="subtitle super">(Work In Progress)</p>
-							<p>Code Snippit management system. This application is more of a personal objective to consolidate all of my own code snippits into a single searchable application.</p>
-
-							<p>This application will be extended by allowing users to sign up and submit their own snippits which can then be reviewed and added to the snippit store.</p>
-
-							<p class="subtitle">C# / ASP.NET / MVC </p>
-					</div>	
-					<div class="col-md-4">
-							<h3><a href="https://github.com/smclark/exhelp">ExHelp</a></h3>
-						<p class="subtitle super">(Working)</p>
-							<p>Set of reusable, modular Exception Helpers for C# Code. These Helper classes will encapsulate a lot of the boiler plate code that is required when needing to perform Null / Empty / invalid checks on parameters.</p>
-
-							<p class="subtitle">C#</p>
-					</div>									
 				</div>
 			</div>
-		</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Lead .NET Developer</span>
+					<span class="company">Spotlight</span>
+					<span class="duration">Mar 2023 - Oct 2024</span>
+				</div>
+				<div class="job-details">
+					<p>Promoted to lead architecture and technical direction for a suite of .NET microservices on AWS.
+					</p>
+					<ul>
+						<li>Designed and built a scalable, event-driven webhooks system using Lambda, API Gateway, SQS,
+							and DynamoDB.</li>
+						<li>Led the migration of ~80,000 users from Dynamics CRM into Recurly with minimal disruption.
+						</li>
+						<li>Drove the framework upgrade from .NET Core 3 to .NET 6, improving performance and
+							maintainability.</li>
+						<li>Integrated Dynatrace for real-time monitoring and diagnostics.</li>
+						<li>Used dotTrace and dotMemory to identify and fix performance bottlenecks in production
+							systems.</li>
+						<li>Delivered the FilmMakers integration, aligning architecture with business goals.</li>
+					</ul>
+					<div class="technologies">
+						<span class="tech-tag">.NET 6</span>
+						<span class="tech-tag">AWS Lambda</span>
+						<span class="tech-tag">DynamoDB</span>
+						<span class="tech-tag">SQS</span>
+						<span class="tech-tag">Recurly</span>
+						<span class="tech-tag">Dynatrace</span>
+					</div>
+				</div>
 			</div>
-		<div class="footer">
-			<div class="container">
-				<div class="col-md-6">
-					<h4>Stuart Clark</h4>
-					<p>Developer, Dad and Dundonian.</p>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Senior Software Engineer</span>
+					<span class="company">Spotlight</span>
+					<span class="duration">Sep 2021 - Mar 2023</span>
 				</div>
-				<div class="col-md-6">
-					<h4>Contact Me</h4>
-					<p>stuartMclark1@gmail.com</p>
+				<div class="job-details">
+					<ul>
+						<li>Built and maintained .NET microservices running on AWS (ECS, Lambda, RDS, Elasticsearch)
+							using Terraform.</li>
+						<li>Developed an internal Blazor tool to streamline user mapping administration.</li>
+						<li>Integrated Recurly to support seamless billing and subscription workflows.</li>
+						<li>Contributed to architectural decisions and collaborated closely with product and operations
+							teams.</li>
+					</ul>
+					<div class="technologies">
+						<span class="tech-tag">.NET</span>
+						<span class="tech-tag">AWS ECS</span>
+						<span class="tech-tag">Terraform</span>
+						<span class="tech-tag">Blazor</span>
+						<span class="tech-tag">Elasticsearch</span>
+					</div>
 				</div>
-		</div>
+			</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Software Engineering Team Lead</span>
+					<span class="company">Ivanti (formerly Cherwell)</span>
+					<span class="duration">Mar 2019 - Sep 2021</span>
+				</div>
+				<div class="job-details">
+					<p>Led a team in an agile environment designing and developing platform enhancements across .NET
+						desktop and web technologies.</p>
+					<ul>
+						<li>Acted as Scrum Master leading the end-to-end agile process.</li>
+						<li>Conducted performance reviews and mentorship through 1:1 meetings.</li>
+						<li>Coordinated strategic planning across Product, UX, and Architecture teams.</li>
+						<li>Part of the Process Improvement Group to identify and implement improvements across the
+							organization.</li>
+					</ul>
+					<div class="technologies">
+						<span class="tech-tag">C#</span>
+						<span class="tech-tag">TypeScript</span>
+						<span class="tech-tag">WebAPI</span>
+						<span class="tech-tag">Docker</span>
+						<span class="tech-tag">Blazor</span>
+						<span class="tech-tag">WPF</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Software Engineer</span>
+					<span class="company">Cherwell Software</span>
+					<span class="duration">Jul 2018 - Mar 2019</span>
+				</div>
+				<div class="job-details">
+					<ul>
+						<li>Designed and developed features and bugfixes for the Cherwell Service Management platform.
+						</li>
+						<li>Developed third-party reporting integrations with PowerBI using REST API and OAuth2.</li>
+						<li>Built web and desktop automation tooling for stress/performance testing.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Scrum Developer</span>
+					<span class="company">Vision (Cegedim Healthcare Solutions)</span>
+					<span class="duration">Nov 2015 - Jul 2018</span>
+				</div>
+				<div class="job-details">
+					<ul>
+						<li>Worked on a componentized framework for hosting WPF application modules.</li>
+						<li>Built enterprise-level Task Management and NHS Community Nursing applications using WPF.
+						</li>
+						<li>Introduced Jenkins CI build system for end-to-end builds and automation.</li>
+						<li>Lead developer of a UI automation framework for testing WPF applications.</li>
+					</ul>
+					<div class="technologies">
+						<span class="tech-tag">C#</span>
+						<span class="tech-tag">WPF</span>
+						<span class="tech-tag">Java</span>
+						<span class="tech-tag">Postgres</span>
+						<span class="tech-tag">Jenkins</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Software Engineer</span>
+					<span class="company">LogicNow (N-able)</span>
+					<span class="duration">Jun 2015 - Nov 2015</span>
+				</div>
+				<div class="job-details">
+					<p>Developed new features in a legacy system and investigated/resolved customer issues. Designed
+						solutions for better maintainability and testability.</p>
+					<div class="technologies">
+						<span class="tech-tag">PHP</span>
+						<span class="tech-tag">C++</span>
+						<span class="tech-tag">SQL</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-item">
+				<div class="job-header">
+					<span class="role">Software Engineer</span>
+					<span class="company">Stoneridge Electronics</span>
+					<span class="duration">Jul 2012 - Jun 2015</span>
+				</div>
+				<div class="job-details">
+					<ul>
+						<li>Developed a test automation framework using Page Object pattern and Selenium.</li>
+						<li>Developed an application to generate random and specific test data utilizing TDD.</li>
+					</ul>
+					<div class="technologies">
+						<span class="tech-tag">C#</span>
+						<span class="tech-tag">JavaScript</span>
+						<span class="tech-tag">Selenium</span>
+						<span class="tech-tag">WPF</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<footer>
+			<p>&copy; <time id="year"></time> Stuart Clark. Built with modern web standards.</p>
+		</footer>
 	</div>
-</body>
-</html>
 
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+
+</html>
